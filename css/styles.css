@@ -1,0 +1,239 @@
+/* How to name you class and ids */
+
+/* 
+    Any new classes that you create must begin with the name of your page.
+    For example: contact us page: container class name will be .contact
+    .contact
+    .home
+    .about
+    .aboutftc
+    .partners
+    .certifications
+    .testamonial
+    .traineeship
+    .404
+
+    If the name of your class is more than one word, separate them with hyphen.
+    For example: .contact-form, .about-img
+
+*/
+
+/* Reset the default styles of the browsers */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles for the website */
+body {
+    font: 100%/1.5 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #1C2331;
+}
+
+h1, h2, h3 {
+    color: #1F439E;
+}
+
+h1 {
+    font-size: 2.25rem ;
+}
+
+h2 {
+    font-size: 1.75rem ;
+}
+
+h3 {
+    font-size: 1.25rem ;
+}
+
+p, a {
+    font-size: 1.125rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+a , button {
+    color: #F05941 ;
+}
+
+a:hover, 
+a:focus {
+    background-color: #FF816B;
+    color: #fff;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/************* PLEASE DO NOT TOUCH ANYTHING ABOVE THIS LINE; 
+ONLY ADD YOUR STYLES IN YOUR DESIGNETED SECTION *************/
+
+/************* This section is reserved for the header styles *************/
+
+
+
+/************* This section is reserved for the footer styles *************/
+footer{
+    background-color: #1C2331;
+    color: #fff;
+    padding-top: 2rem;
+}
+
+.grid {  
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2rem 0px;
+    grid-template-areas:
+      "logo"
+      "text"
+      "browse"
+      "contact"
+      "icons"
+      "copyright";
+  }
+  
+  .logo { grid-area: logo; }
+  
+  .text { grid-area: text; }
+  
+  .copyright { grid-area: copyright; }
+  
+  .browse { grid-area: browse; }
+  
+  .contact { grid-area: contact; }
+  
+  .icons { grid-area: icons; }
+.browse-list li{
+    text-align: center;
+}
+
+.icons img{
+    background-color: #fff;
+    padding: .4rem;
+    width: 3rem;
+    margin: 0 .6rem;
+}
+
+.icons a:focus,
+.icons a:hover {
+    background-color: transparent;
+}
+
+
+/************* This section is reserved for the homepage styles *************/
+
+
+
+/************* This section is reserved for the traineeship styles *************/
+
+
+
+/************* This section is reserved for the about course styles *************/
+
+
+
+/************* This section is reserved for the testamonial styles *************/
+
+
+
+/************* This section is reserved for the certifications styles *************/
+
+
+
+/************* This section is reserved for the contact styles *************/
+
+
+
+/************* This section is reserved for the about ftc styles *************/
+
+
+
+/************* This section is reserved for the our partners styles *************/
+
+ul {
+    list-style: none;
+}
+
+.partnes-img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+/************* This section is reserved for mobile media query *************/
+
+@media screen and (min-width: 420px) {
+    /* Footer */
+    .grid {  
+        text-align: left;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "logo browse"
+          "text icons"
+          "contact copyright";
+      }
+      
+      .logo { grid-area: logo; }
+      
+      .text { grid-area: text; 
+        position: relative;
+        top: -60%;
+    }
+      
+      .copyright { grid-area: copyright; }
+      
+      .browse { grid-area: browse; }
+      
+      .contact { grid-area: contact;
+        position: relative;
+        top: -60%; 
+    }
+      
+      .icons { grid-area: icons; }
+}
+
+
+/************* This section is reserved for mobile media query *************/
+
+@media screen and (min-width: 820px) {
+    /* Footer */
+    .grid {  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "logo browse contact"
+          "text browse contact"
+          "copyright browse icons";
+      }
+      
+      .logo { grid-area: logo; }
+      
+      .text { grid-area: text; }
+      
+      .copyright { grid-area: copyright; }
+      
+      .browse { grid-area: browse; }
+      
+      .contact { grid-area: contact; }
+      
+      .icons { grid-area: icons; }
+      
+}
+
+
