@@ -107,6 +107,9 @@ footer .container{
     text-align: center;
     padding-bottom: 2rem;
 }
+footer h3 {
+    margin-bottom: .8rem;
+}
 
 .footer-icons img{
     background-color: #fff;
@@ -229,7 +232,11 @@ ul {
     }
     .footer-copyright {
         order: 6;
+        position: relative;
+        top: 10px;
     }
+
+   
     /* Partners */
 
     .partners-head-text{
@@ -265,7 +272,7 @@ ul {
         order: 3;
     }
     .footer-icons{
-    top: 0px;
+    top: 30px;
     right: 15px;
         
     }
