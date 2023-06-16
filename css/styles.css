@@ -355,6 +355,10 @@ footer a:hover{
     color: #FF816B;
 }
 
+footer p {
+  max-width: none;
+}
+
 footer .container{
     display: flex;
     flex-direction: column;
