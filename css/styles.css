@@ -397,6 +397,10 @@ footer h3 {
   flex-direction: column;
 }
 
+.home-section {
+  padding-top: 10px;
+}
+
 .home-main-content p, img {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -423,10 +427,13 @@ footer h3 {
 }
 
 .home-logos{
-
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.home-logo-content{
+  padding-bottom: 10px;
 }
 
 .home-logos img {
@@ -466,6 +473,8 @@ footer h3 {
 .about-ftc-tabs {
   display: block;
   padding-top: 10px;
+  padding-bottom: 10px;
+
 }
 
 .about-ftc-section {
